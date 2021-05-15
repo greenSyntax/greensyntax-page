@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", "Roboto";
+}
+
+/* Root Container */
+
+.root-container  {
+    background: #131920;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* Navbar */
+
+.nav-bar {
+    padding-left: 2em;
+    height: 10vh;
+    display: flex;
+    background-color: #131920;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-bar h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+/* Hero Component */
+
+.hero-container {
+    height: 80vh;
+    background-color: #131920;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.hero-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 5em;
+    color: #3498db;
+    margin: .2em;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    color: aliceblue;
+}
+
+.hero-image {
+    margin: 1em 2em;
+}
+
+button {
+    display: block;
+    margin: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    border: 2px solid;
+    cursor: pointer;
+    background: #131920;
+    color: #3498db;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: #131920;
+}
+
+/* Projects Component */
+
+.projects {
+    background-color: #222d39;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    background-color: #222d39;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 4em 2em;
+}
+
+.project-item {
+    padding: 1em;
+    margin: 1em;
+    background-color: #3498db;
+    width: 12em;
+    height: 12em;
+    text-align: center;
+}
+
+.projects .title {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.project-item h2 {
+    text-align: center;
+}
+
+.project-item p {
+    text-align: center;
+}
+
+/* Community Component */
+
+.community-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #131920;
+    color: #fff;
+    padding: .5em 2em;
+    height: 30vh;
+}
+
+.community-item {
+
+}
+
+.community-item .title {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.community-item .subtitle {
+    font-size: 1.2em;
+}
+
+/* Subscribe Component */
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222d39;
+    color: #fff;
+    padding: .5em 2em;
+    height: 50vh;
+}
+
+.subscribe-item {
+    margin: .5em;
+}
+
+.subscribe-item .title {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.subscribe-item .subtitle {
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.subscribe-item .subscribe-item-control input {
+    width: 40vh;
+    border: 2px solid #fff;
+    margin: 4px 0;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    background: #222d39;
+    color: #fff;
+    font-size: 1em;
+}
+
+.subscribe-item-control {
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    height: 5vh;
+}
+
+.subscribe-item-control input {
+}
+
+.subscribe-item-control button {
+    height: 90%;
+    background-color: #222d39;
+    color: #fff;
+    display: block;
+    margin: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.subscribe-item-control button:hover {
+    background-color: #3498db;
+    color: #131920;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: #131920;
+}
+
+/* Footer Component */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #131920;
+    color: #fff;
+    padding: .5em 2em;
+    height: 30vh;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: .5em;
+}
+
+.footer-container .facebook {
+    margin: .5em;
+}
+
+.footer-container .twitter {
+    margin: .5em;
+}
+
+.footer-container .github {
+    margin: .5em;
+}
+
+.footer-item .title {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-item .subtitle {
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+.nav-bar {
+    justify-content: start;
+}
+
+.nav-bar h2 {
+    font-size: 1em;
+}
+
+.hero-container {
+    height: 80vh;
+    padding: 1em;
+}
+
+.hero-title {
+    margin: .5em;
+    font-size: 2.5em;
+   
+}
+
+.hero-subtitle {
+    font-size: 1em;
+}
+
+.projects {
+    height: 100%;
+}
+
+.project-container {
+    background-color: #222d39;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 4em 2em;
+}
+
+.projects .title {
+    margin: 1em;
+    font-size: 2em;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #222d39;
+    color: #fff;
+    padding: .5em 2em;
+    height: 60vh;
+}
+
+.subscribe-item .title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.subscribe-item .subtitle {
+    font-size: 1em;
+    text-align: center;
+}
+
+.subscribe-item-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    height: 5vh;
+}
+
+.footer-item .title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer-item .subtitle {
+    font-size: 1em;
+    text-align: center;
+}
+
+.community-item .title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.community-item .subtitle {
+    font-size: 1em;
+    text-align: center;
+}
+
+}
+
+@media (min-width: 1200px) { 
+
+.project-item {
+    width: 10em;
+    height: 10em;
+}
+
+.projects h3 {
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+.projects p {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+}
